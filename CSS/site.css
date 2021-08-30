@@ -1,0 +1,22 @@
+.image {
+border: 2px solid black;
+width: 50%;
+float: left;
+}
+
+.main {
+width: 50%;
+float: left;
+}
+
+
+
+
+.AddressBookBG {
+width: 100%;
+background:url(/IMG/Shore\ HTML\ backhround.jpg);
+background-repeat: no-repeat;
+background-position: center;
+background-size: cover;
+background-attachment: fixed;
+}
