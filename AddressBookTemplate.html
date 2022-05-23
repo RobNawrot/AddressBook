@@ -17,45 +17,53 @@
 
 <body class="h-100">
 
-       <div class="container mt-5">
-           <h2>My Address Book</h2>
-            <div class="p-3 border border-2 shadow-lg bg-light">
-                <form class="row g-3 p-2">
-                    <div class="col-12 col-md-4">
-                        <img class="img-fluid" src="img/GirlOne_4x.png">
+    <form class="container mt-2">
+        <h2 class="text-lg-start mt-5">Address Book</h2>
+        <div class="one shadow-lg bg-white p-3">
+            <div class="row">
+                <div class="col-12 col-md-4"> 
+                    <img class="img-fluid" src="img/GirlOne_4x.png">
+                </div>
+                <div class="col-12 col-md-8">
+                    <div class="row m-2">
+                        <div class="col-12 col-md-6">
+                            <label for="inputFirstName" class="form-label">First Name</label>
+                            <input type="text" name="firstname" class="form-control bg-light" id="inputFirstName" placeholder="First Name" aria-label="First Name" required>
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <label for="inputLastName" class="form-label">Last Name</label>
+                            <input type="text" name="lastname" class="form-control bg-light" id="inputLastName" placeholder="Last Name" aria-label="Last Name" required>
+                        </div>
                     </div>
-                    <div class="col-12 col-md-8">
-                        <div class="row">
-                            <div class="col-12 col-md-6">
-                                <label for="inputFirstName" class="form-label">First Name</label>
-                                <input type="text" class="form-control" id="inputFirstName" placeholder="First Name">
-                            </div>
-                            <div class="col-12 col-md-6">
-                                <label for="inputLastName" class="form-label">Last Name</label>
-                                <input type="text" class="form-control" id="inputLastName" placeholder="Last Name">
-                            </div>
-                            <div class="col-12 col-md-6">
-                                <label for="inputEmail" class="form-label">Email</label>
-                                <input type="email" class="form-control" id="inputEmail" placeholder="Email@gmail.com">
-                            </div>
-                            <div class="col-12 col-md-6">
-                                <label for="inputPhone" class="form-label">Phone</label>
-                                <input type="tel" class="form-control" id="inputPhone" placeholder="506-379-3005">
-                            </div>
-                            <div class="col-md-12">
-                                <label for="inputAddress" class="form-label">Address</label>
-                                <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
-                            </div>
-                            <div class="col-md-12">
-                                <label for="inputAddress2" class="form-label">Address 2</label>
-                                <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio or floor">
-                            </div>
-                            <div class="col-12 col-md-6">
-                                <label for="inputCity" class="form-label">City</label>
-                                <input type="text" class="form-control" id="inputCity" placeholder="Toronto">
-                            </div>
-                            <div class="col-12 col-md-4">
-                                <label for="inputProvince" class="form-label text-dark">Province</label>
+                    <div class="row m-2">
+                        <div class="col-12 col-md-6">
+                            <label for="inputEmail" class="form-label">Email</label>
+                            <input type="email" name="email" class="form-control bg-light" id="inputEmail" placeholder="Email" aria-label="Email" required>
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <label for="inputPhone" class="form-label">Phone</label>
+                            <input type="text" name="phone" class="form-control bg-light" id="inputPhone" placeholder="Phone" aria-label="Phone" required>
+                        </div>
+                    </div>
+                    <div class="row m-2">
+                        <div class="col-12">
+                            <label for="inputAddress" class="form-label">Address 1</label>
+                            <input type="text" name="Address" class="form-control bg-light" id="inputAddress" placeholder="Address" aria-label="Address" required>
+                        </div>
+                    </div>
+                    <div class="row m-2">
+                        <div class="col-12">
+                            <label for="inputAddress2" class="form-label">Address 2</label>
+                            <input type="text" name="Address2" class="form-control bg-light" id="inputAddress2" placeholder="Ex: 34 Allenview Road, Suite 80, Ontario, M4L 3R9" aria-label="Address2" required>
+                        </div>
+                    </div>
+                    <div class="row m-2">
+                        <div class="col-12 col-md-6">
+                            <label for="inputCity" class="form-label">City</label>
+                            <input type="text" name="City" class="form-control bg-light" id="inputCity" placeholder="City" aria-label="City" required=""></input>
+                        </div>
+                        <div class="col-12 col-md-4">
+                            <label for="inputProvince" class="form-label text-dark">Province</label>
                                 <select id="inputProvince" class="form-select">
                                     <option selected>Choose...</option>
                                     <option value="1">Alberta</option>
@@ -72,119 +80,26 @@
                                     <option value="12">Saskatchewan</option>
                                     <option value="13">Yukon</option>
                                     </select>
-                            </div>
-                            <div class="col-12 col-md-2">
-                                <label for="inputPostal" class="form-label">Postal</label>
-                                <input type="text" class="form-control" id="inputPostal">
-                            </div>
-                            <div class="col-md-12">
-                                <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" id="CheckFamily">
-                                    <label class="form-check-label" for="CheckFamily">Family</label>
-                                </div>
-                            </div>
-                            <div class="col-12 d-flex justify-content-end">
-                                <button type="button" class="btn btn-lg btn-primary">Save</button>
-                            </div>
+                        </div>
+                        <div class="col-12 col-md-2">
+                            <label for="inputPostal" class="form-label">Postal</label>
+                            <input type="text" name="Postal" class="form-control bg-light" id="inputPostal" placeholder="Y4R 7T3" aria-label="Postal" required></input>
                         </div>
                     </div>
-                </form>
+                    <div class="row m-2">
+                        <div class="col">
+                            <label class="form-check-label" for="checkFamily">Family</label>
+                            <input class="form-check-input" type="checkbox" name="checkbox" id="checkFamily">
+                        </div>
+                        <div class="col-1 d-flex justify-content-end">
+                            <button type="button" class="btn btn-lg btn-primary">Save</button>
+                        </div>
+                    </div>
+                </div>
             </div>
-       </div>
 
-
-
-
-                                    <!-- The Code commented out below is from my initial attempt unassisted -->
-
-       <!-- <h3 class="text-left mt-5">My Address Book</h3>
-       <form class="row bg-light shadow-lg border border-3 border-dark">
-           <div class="p-3">
-               <img src="IMG/Man Face.png" class="rounded float-start mw-100 img-fluid" alt="Male Silhouette">
-               <div class="row mb-2">
-                   <div class="col-md-6">
-                       <label class="form-label text-dark">First Name</label>
-                       <input type="text" name="firstname" class="form-control" placeholder="First Name" aria-label="First name">
-                   </div>
-                   <div class="col-md-6">
-                       <label class="form-label text-dark">Last Name</label>
-                       <input type="text" name="lastname" class="form-control" placeholder="Last Name" aria-label="Last name">
-                   </div>
-               </div>
-               <div class="row mb-2">
-                   <div class="col-md-6">
-                       <label class="form-label text-dark">Email</label>
-                       <input type="email" name="email" class="form-control" placeholder="Email" aria-label="Email">
-                   </div>
-                   <div class="col-md-6">
-                       <label class="form-label text-dark">Phone</label>
-                       <input type="tel" name="phone" class="form-control" placeholder="Phone" aria-label="Phone">
-                   </div>
-               </div>
-               <div class="row mb-2">
-                   <div class="col">
-                       <label class="form-label text-dark">Address</label>
-                       <input type="text" name="address1" class="form-control" placeholder="1234 Main St" area-label="Address1">
-                   </div>
-               </div>
-               <div class="row mb-2">
-                   <div class="col">
-                       <label class="form-label text-dark">Address 2</label>
-                       <input type="text" name="address2" class="form-control" placeholder="Apartment, studio or floor" area-label="Address2">
-                   </div>
-               </div>
-               <div class="row mb-2">
-                   <div class="col-md-6">
-                       <label class="form-label text-dark">City</label> 
-                       <input type="text" name="city" class="form-control" placeholder="Toronto" aria-label="city">
-                   </div>
-                   <div class="col-md-4">
-                       <label class="form-label text-dark">Province</label>
-                       <select class="form-select" aria-label="Default select example">
-                           <option selected>Choose...</option>
-                           <option value="1">Alberta</option>
-                           <option value="2">British Columbia</option>
-                           <option value="3">Manitoba</option>
-                           <option value="3">New Brunswick</option>
-                           <option value="3">Newfoundland & Labrador</option>
-                           <option value="3">Northwest Territories</option>
-                           <option value="3">Nova Scotia</option>
-                           <option value="3">Nunavut</option>
-                           <option value="3">Ontario</option>
-                           <option value="3">Prince Edward Island</option>
-                           <option value="3">Quebec</option>
-                           <option value="3">Saskatchewan</option>
-                           <option value="3">Yukon</option>
-                         </select>
-                   </div>
-                   <div class="col-md-2">
-                       <label class="form-label text-dark">Postal</label>
-                       <input type="text" name="postalc" class="form-control" placeholder="Y4R 7T3" aria-label="postalc">
-                   </div>
-               </div>
-               <div class="row">
-                   <div class="col-md-12">
-                       <div class="form-check">
-                           <label class="form-check-label text-dark">Family</label>
-                           <input type="checkbox" name="checkbox" class="form-check-input">
-                       </div> 
-                   </div>
-               </div>
-               <div class="row px-1">
-                   <div class="col">
-                   </div>
-                   <div class="col-md-1 mx-2">
-                       <input type="button" name="button" class="form-control btn btn-primary border-2 border-dark" value="Save" placeholder="Save" aria-label="button">
-                   </div>
-               </div>
-           </div> 
-
-       </form> -->
- 
-
-
-    
-    
+        </div>
+    </form>
 
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
